@@ -24,7 +24,7 @@
 .first-section {
   background-image: url('../assets/images/taxi.jpg');
   background-size: 100% auto;
-  background-position: center 91%;
+  background-position: bottom;
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -40,7 +40,20 @@
 /* Second section */
 
 .second-section {
-  
+
+}
+
+.container-image {
+  border: 1px solid #FFFFFF;
+}
+
+/* Third section */
+.third-section {
+  background-image: url('../assets/images/conduce.jpg');
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 @media (min-width: 768px) {
