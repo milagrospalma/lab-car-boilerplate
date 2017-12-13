@@ -1,0 +1,54 @@
+/* Clases reutilizables */
+
+.container-super-fluid {
+  width: 100%;
+  padding: 0;
+}
+
+.bg-yellow {
+  background-color: #FFC107;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+.white-button {
+  background-color: #FFFFFF;
+  display: inline-block;;
+  color: #000000;
+  padding: 5px 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+/* First section */
+.first-section {
+  background-image: url('../assets/images/taxi.jpg');
+  background-size: 100% auto;
+  background-position: center 91%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.download {
+  display: block;
+}
+
+.sign-up {
+  display: none;
+}
+
+/* Second section */
+
+.second-section {
+  
+}
+
+@media (min-width: 768px) {
+  .download {
+    display: none;
+  }
+
+  .sign-up {
+    display: block;
+  }
+}
