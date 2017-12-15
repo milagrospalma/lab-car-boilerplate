@@ -1,4 +1,30 @@
+* {
+
+  box-sizing: border-box;
+}
+
+/* Eliminando el padding de las clases col de Bootstrap */
+[class*='col-'] {
+  padding: 0;
+}
+
 /* Clases reutilizables */
+.no-margin {
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center; /* space-around */
+  /*align-items: flex-end;*/
+}
+
+.flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .container-super-fluid {
   width: 100%;
@@ -9,6 +35,10 @@
   background-color: #FFC107;
   color: #FFFFFF;
   padding: 20px;
+}
+
+.yellow {
+  background-color: #FFC107;
 }
 
 .white-button {
@@ -24,18 +54,14 @@
 .first-section {
   background-image: url('../assets/images/taxi.jpg');
   background-size: 100% auto;
-  background-position: bottom;
+  /*background-size: auto 100vh;*/
+  background-position: center 90%;
+  /*background-position: bottom;*/
   background-repeat: no-repeat;
   height: 100vh;
+
 }
 
-.download {
-  display: block;
-}
-
-.sign-up {
-  display: none;
-}
 
 /* Second section */
 
@@ -47,21 +73,29 @@
   border: 1px solid #FFFFFF;
 }
 
+.container-image figure {
+  width: 100%;
+}
+
+.container-image figure img {
+  width: 100%;
+}
+
 /* Third section */
 .third-section {
   background-image: url('../assets/images/conduce.jpg');
-  background-size: 100% auto;
+  background-size: 100vw 100vh;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
 }
 
-@media (min-width: 768px) {
-  .download {
-    display: none;
-  }
+.driver {
+  background: rgba(0, 0, 0, 0.6);
+  color: #FFFFFF;
+  height: 100vh;
+}
 
-  .sign-up {
-    display: block;
-  }
+@media (min-width: 768px) {
+
 }
