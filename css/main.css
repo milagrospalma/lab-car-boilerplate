@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  color: #FFFFFF;
 }
 
 /* Eliminando el padding de las clases col de Bootstrap */
@@ -7,14 +8,25 @@
   padding: 0;
 }
 
-/* Clases reutilizables */
-.no-margin {
+.row {
   margin: 0;
 }
 
+.input-group-addon {
+  background-color: transparent;
+  border: none;
+}
+
+.form-control {
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+}
+
+/* Clases reutilizables */
+
 .flex-container {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: center; /* space-around */
   /*align-items: flex-end;*/
 }
@@ -30,62 +42,63 @@
   padding: 0;
 }
 
-.bg-yellow {
-  background-color: #FFC107;
-  color: #FFFFFF;
-  padding: 20px;
-}
-
 .yellow {
   background-color: #FFC107;
-  color: #FFFFFF;
 }
 
-.white-button {
-  background-color: #FFFFFF;
-  display: inline-block;;
+.btn-white {
   color: #000000;
-  padding: 5px 10px;
+  border: none;
   margin-top: 5px;
   border-radius: 5px;
+}
+
+/* Navbar */
+.nav-white {
+  /*padding-top: 3vh;*/
+  background-color: #FFFFFF;
+  border: none;
+  margin: 0;
+}
+
+.navbar-brand img {
+  height: 100%;
+  /*margin: auto -15px;*/
 }
 
 /* First section */
 .first-section {
   background-image: url('../assets/images/taxi.jpg');
-  background-size: 100% auto;
+  background-size: cover;
+  /*background-size: 100% auto;*/
   /*background-size: auto 100vh;*/
-  background-position: center 90%;
-  /*background-position: bottom;*/
+  background-position: center 91%;
   background-repeat: no-repeat;
   height: 100vh;
-
 }
 
+.space {
+  padding: 20px 50px;
+}
 
 /* Second section */
-
 .second-section {
-
 }
 
-.container-image {
+.container-app {
   border: 1px solid #FFFFFF;
+  margin: 5vh 0;
 }
 
-.container-image figure {
-  width: 100%;
-}
-
-.container-image figure img {
+.container-image img {
   width: 100%;
 }
 
 /* Third section */
 .third-section {
   background-image: url('../assets/images/conduce.jpg');
-  background-size: 100vw 100vh;
-  background-position: center;
+  background-size: cover;
+  background-position: right;
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -102,6 +115,32 @@
   color: #FFFFFF;
 }
 
-@media (min-width: 768px) {
+.logo {
+  border-bottom: 1px solid #FFFFFF;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
 
+.copyright {
+  border-top: 1px solid #FFFFFF;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+/* Footer */
+ul>li {
+  padding: 10px 0;
+
+}
+
+.google-play > img {
+  width: 100%;
+}
+
+.app-store {
+  margin-top: 15px;
+}
+
+.app-store > img {
+  width: 100%;
 }

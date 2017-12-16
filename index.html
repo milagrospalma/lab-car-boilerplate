@@ -15,43 +15,47 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-default no-margin">
+    <nav class="navbar navbar-default nav-white">
       <div class="container-super-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <img alt="Logo Principal" src="assets/images/logoForma.png">
-          </a>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img alt="Logo Principal" src="assets/images/logoForma.png">
+              </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Viaja</a></li>
+                <li><a href="#">Conduce</a></li>
+                <li><a href="#">Inicia sesión</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Viaja</a></li>
-            <li><a href="#">Conduce</a></li>
-            <li><a href="#">Inicia sesión</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
+        <!-- Brand and toggle get grouped for better mobile display -->
       </div><!-- /.container-fluid -->
     </nav>
     <!-- First Section: Comienza a viajar -->
     <section class="first-section flex-container">
       <div class="container-super-fluid">
-        <div class="row no-margin">
+        <div class="row">
           <div class="col-xs-12">
-              <div class="download visible-xs bg-yellow col-xs-offset-3 col-xs-9">
-                <p>
+              <div class="download visible-xs yellow space col-xs-offset-3 col-xs-9">
+                <h1>
                   Comienza a viajar<br>con
                   <img src="assets/images/logoBlanco.png" alt="Logo Blanco">
-                </p>
-                <a class="white-button" href="#">Descarga el app</a>
+                </h1>
+                <button type="button" class="btn btn-default btn-white">Descarga el app</button>
               </div>
-              <div class="sign-up hidden-xs bg-yellow col-md-offset-8 col-md-4">
+              <div class="sign-up hidden-xs yellow space col-md-offset-8 col-md-4">
                 <p>
                   Disfruta del viaje<br>Eres dueño de tu tiempo
                 </p>
@@ -59,30 +63,28 @@
                   Viaja con
                   <img src="assets/images/logoBlanco.png" alt="Logo Blanco">
                 </p>
-                <a class="white-button" href="#">Regístrate</a>
+                <button type="button" class="btn btn-default btn-white">Regístrate</button>
                 <p>- O bien -</p>
-                <a class="white-button" href="#">Conviértete en un conductor</a>
+                <button type="button" class="btn btn-default btn-white">Conviértete en un conductor</button>
               </div>
             </div>
           </div>
         </div>
     </section>
     <!-- Second section: La nueva app -->
-    <section class="second-section bg-yellow">
-      <div class="container-super-fluid">
+    <section class="second-section yellow">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12">
-            <div class="container-app">
-              <div class="container-image ">
-                <p>La nueva app</p>
-                <figure>
-                  <img src="assets/images/iPhone6Plus.png" alt="App">
-                </figure>
-              </div>
-              <div class="container-text">
-                <p>Llega a tu destino aún más rápido</p>
-              </div>
-            </div> <!-- container-app -->
+            <div class="container-app col-xs-12 flex-container">
+              <h4 class="col-xs-offset-4 col-xs-4">La nueva app</h4>
+              <figure class="container-image col-xs-offset-2 col-xs-8">
+                <img src="assets/images/iPhone6Plus.png" alt="App">
+              </figure>
+            </div>
+            <div class="container-text">
+              <p>Llega a tu destino aún más rápido</p>
+            </div>
           </div>
         </div>
       </div>
@@ -90,7 +92,7 @@
     <!-- Third section: Conduce -->
     <section class="third-section flex-container">
       <div class="container-super-fluid">
-        <div class="row no-margin">
+        <div class="row">
           <div class="col-xs-12">
               <div class="driver flex-item">
                 <div class="col-xs-10">
@@ -104,22 +106,32 @@
         </div>
     </section>
     <!-- Forth section: Tarifas -->
-    <section class="fourth-section yellow">
-      <h4>Tarifas</h4>
-      <p>Consulta las tarifas LabCar aquí:</p>
-      <div class="input-group">
-        <span class="input-group-addon" id="basic-addon1">
-          <img src="assets/images/shape.png" alt="Shape 1">
-        </span>
-        <input type="text" class="form-control" placeholder="Origen" aria-describedby="basic-addon1">
-      </div>
-      <div class="input-group">
-        <span class="input-group-addon" id="basic-addon1">
-          <img src="assets/images/shape2.png" alt="Shape 2">
-        </span>
-        <input type="text" class="form-control" placeholder="Destino" aria-describedby="basic-addon1">
-      </div>
-      <button type="button" class="btn btn-default">¡TRAZAR RUTA!</button>
+    <section class="fourth-section yellow flex-container">
+      <div class="container-super-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="col-xs-offset-1 col-xs-10">
+              <h4>Tarifas</h4>
+              <p>Consulta las tarifas LabCar aquí:</p>
+            </div>
+            <div class="input-group col-xs-offset-1 col-xs-10">
+              <span class="input-group-addon" id="basic-addon1">
+                <img src="assets/images/shape.png" alt="Shape 1">
+              </span>
+              <input type="text" class="form-control" placeholder="Origen" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group col-xs-offset-1 col-xs-10">
+              <span class="input-group-addon" id="basic-addon1">
+                <img src="assets/images/shape2.png" alt="Shape 2">
+              </span>
+              <input type="text" class="form-control" placeholder="Destino" aria-describedby="basic-addon1">
+            </div>
+            <div class="col-xs-offset-5 col-xs-3">
+              <button type="button" class="btn btn-default btn-white">¡TRAZAR RUTA!</button>
+            </div>
+          </div> <!-- col-xs-12 -->
+        </div> <!-- row -->
+      </div> <!-- container-->
     </section>
     <!-- Footer -->
     <footer class="gray">
@@ -147,7 +159,7 @@
             </div>
             <div class="column-2 col-xs-6">
               <ul class="list-unstyled">
-                <li class="icons">
+                <li class="icons col-md-3">
                   <ul class="list-inline">
                     <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
                     <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
@@ -156,10 +168,10 @@
                     <li><i class="fa fa-play" aria-hidden="true"></i></li>
                   </ul>
                 </li>
-                <li class="google-play">
+                <li class="google-play col-xs-9 col-md-3">
                   <img src="assets/images/enBadgeWebGeneric.png" alt="Google Play">
                 </li>
-                <li class="app-store">
+                <li class="app-store col-xs-9 col-md-3">
                   <img src="assets/images/appstore.png" alt="App Store">
                 </li>
               </ul>
@@ -168,7 +180,9 @@
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <p>© 2017 LabCar technologies Inc.</p>
+            <div class="copyright">
+              <p>© 2017 LabCar technologies Inc.</p>
+            </div>
           </div>
         </div>
       </div>
