@@ -1,9 +1,11 @@
 * {
   box-sizing: border-box;
   color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Eliminando el padding de las clases col de Bootstrap */
+
 [class*='col-'] {
   padding: 0;
 }
@@ -12,23 +14,12 @@
   margin: 0;
 }
 
-.input-group-addon {
-  background-color: transparent;
-  border: none;
-}
-
-.form-control {
-  background-color: transparent;
-  border: 1px solid #FFFFFF;
-}
-
 /* Clases reutilizables */
 
 .flex-container {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* space-around */
-  /*align-items: flex-end;*/
+  justify-content: center;
 }
 
 .flex-item {
@@ -53,7 +44,12 @@
   border-radius: 5px;
 }
 
+.font-bold {
+  font-weight: bold;
+}
+
 /* Navbar */
+
 .nav-white {
   /*padding-top: 3vh;*/
   background-color: #FFFFFF;
@@ -67,11 +63,10 @@
 }
 
 /* First section */
+
 .first-section {
   background-image: url('../assets/images/taxi.jpg');
   background-size: cover;
-  /*background-size: 100% auto;*/
-  /*background-size: auto 100vh;*/
   background-position: center 91%;
   background-repeat: no-repeat;
   height: 100vh;
@@ -81,13 +76,16 @@
   padding: 20px 50px;
 }
 
-/* Second section */
-.second-section {
+.download h3 img {
+  width: 40%;
 }
+
+/* Second section */
 
 .container-app {
   border: 1px solid #FFFFFF;
   margin: 5vh 0;
+  padding: 20px;
 }
 
 .container-image img {
@@ -95,6 +93,7 @@
 }
 
 /* Third section */
+
 .third-section {
   background-image: url('../assets/images/conduce.jpg');
   background-size: cover;
@@ -105,14 +104,46 @@
 
 .driver {
   background: rgba(0, 0, 0, 0.6);
-  color: #FFFFFF;
   height: 100vh;
 }
 
 /* Fourth section*/
+
+span.container-icon {
+  background-color: transparent;
+  border: none;
+}
+
+input.form-style {
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+input.form-style::placeholder {
+  color: #FFFFFF;
+}
+
+.between {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container-map {
+  border: 1px solid #FFFFFF;
+  padding: 10px;
+}
+
+.container-map img {
+  width: 100%;
+  height: 50vh;
+}
+
+/* Footer */
+
 .gray {
   background-color: #3F4448;
-  color: #FFFFFF;
 }
 
 .logo {
@@ -127,10 +158,8 @@
   margin-top: 10px;
 }
 
-/* Footer */
-ul>li {
+ul li {
   padding: 10px 0;
-
 }
 
 .google-play > img {
