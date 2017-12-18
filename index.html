@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Document</title>
+    <title>LabCar</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:500,600,700" rel="stylesheet">
     <!-- Icons -->
@@ -115,17 +115,19 @@
       </div>
     </section>
     <!-- Third section: Conduce -->
-    <section class="third-section">
+    <section class="third-section flex-container">
       <div class="container-super-fluid">
         <div class="row">
-          <div class="col-xs-12">
-              <div class="total visible-xs overlay">
-                <div class="col-xs-10">
+          <div class="col-xs-12 col-md-12">
+            <div class="col-xs-12">
+              <div class="total col-xs-12 visible-xs flex-container">
+                <div class="col-xs-offset-1 col-xs-10">
                   <h4 class="font-bold">Conduce cuando quieras</h4>
                   <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
                   <button type="button" class="btn yellow font-bold">Conviértete en conductor</button>
                 </div>
               </div>
+            </div>
               <div class="small hidden-xs overlay flex-container pull-right col-md-4">
                 <div class="col-md-offset-1 col-md-10">
                   <h3 class="font-bold">Conduce cuando quieras</h3>
@@ -141,33 +143,36 @@
     <section class="fourth-section yellow">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <div class="col-xs-offset-1 col-xs-10 between">
-              <h4 class="font-bold">Tarifas</h4>
-              <p>Consulta las tarifas LabCar aquí:</p>
+          <div class="col-xs-12 col-md-12">
+            <div class="container-content col-xs-12 col-md-offset-1 col-md-4">
+              <div class="col-xs-offset-1 col-xs-10 between col-md-offset-1 col-md-11">
+                <h4 class="font-bold">Tarifas</h4>
+                <p>Consulta las tarifas LabCar aquí:</p>
+              </div>
+              <div class="input-group between col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
+                <span class="input-group-addon container-icon" id="basic-addon1">
+                  <img src="assets/images/shape.png" alt="Shape 1">
+                </span>
+                <input type="text" class="form-control form-style" placeholder="Ingresa tu ubicación" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group between col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
+                <span class="input-group-addon container-icon" id="basic-addon1">
+                  <img src="assets/images/shape2.png" alt="Shape 2">
+                </span>
+                <input type="text" class="form-control form-style" placeholder="Ingresa tu destino" aria-describedby="basic-addon1">
+              </div>
+              <div class="col-xs-offset-4 col-xs-4 col-md-offset-4 col-md-4 flex-item">
+                <button type="button" class="btn btn-default btn-white between font-bold">¡TRAZAR RUTA!</button>
+              </div>
             </div>
-            <div class="input-group between col-xs-offset-1 col-xs-10 col-md-10">
-              <span class="input-group-addon container-icon" id="basic-addon1">
-                <img src="assets/images/shape.png" alt="Shape 1">
-              </span>
-              <input type="text" class="form-control form-style" placeholder="Ingresa tu ubicación" aria-describedby="basic-addon1">
+            <div class="container-map col-xs-offset-1 col-xs-10 between col-md-4">
+              <img src="assets/images/google-maps1.jpg" alt="Google Maps">
             </div>
-            <div class="input-group between col-xs-offset-1 col-xs-10 col-md-10">
-              <span class="input-group-addon container-icon" id="basic-addon1">
-                <img src="assets/images/shape2.png" alt="Shape 2">
-              </span>
-              <input type="text" class="form-control form-style" placeholder="Ingresa tu destino" aria-describedby="basic-addon1">
-            </div>
-            <div class="col-xs-offset-4 col-xs-4 col-md-offset-2 col-md-8 flex-item">
-              <button type="button" class="btn btn-default btn-white between font-bold">¡TRAZAR RUTA!</button>
-            </div>
+
           </div> <!-- col-xs-12 -->
         </div> <!-- row -->
         <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <div class="container-map col-xs-offset-1 col-xs-10 between col-md-10">
-              <img src="assets/images/google-maps1.jpg" alt="Google Maps">
-            </div>
+          <div class="col-xs-12 col-md-12">
           </div>
         </div>
       </div> <!-- container-->
