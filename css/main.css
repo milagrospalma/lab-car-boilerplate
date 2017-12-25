@@ -2,24 +2,22 @@
   box-sizing: border-box;
   color: #FFFFFF;
   font-family: 'Raleway', sans-serif;
-}
-
-/* Eliminando el padding de las clases col de Bootstrap */
-
-[class*='col-'] {
+  margin: 0;
   padding: 0;
 }
 
-.row {
-  margin: 0;
+/* Clases reutilizables */
+.flex-container-row {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
 }
 
-/* Clases reutilizables */
-
-.flex-container {
+.flex-container-column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  /* align-items: center; */
 }
 
 .flex-item {
@@ -28,10 +26,10 @@
   align-items: center;
 }
 
-.container-super-fluid {
+/* .container-super-fluid {
   width: 100%;
   padding: 0;
-}
+} */
 
 .yellow {
   background-color: #FFC107;
@@ -58,11 +56,6 @@
   background-color: #FFFFFF;
   border: none;
   margin: 0;
-}
-
-.navbar-brand img {
-  height: 100%;
-  /*margin: auto -15px;*/
 }
 
 /* First section */
