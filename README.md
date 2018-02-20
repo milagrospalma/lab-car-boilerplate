@@ -1,5 +1,5 @@
 # LabCar
-Este repositorio contiene una recreación de la página web LabCar, haciendo uso del framework Bootstrap.
+Este repositorio contiene una recreación de la página web LabCar, haciendo uso del framework Bootstrap y Google Maps API.
 
 ![Desktop](assets/docs/desktop.png)
 
