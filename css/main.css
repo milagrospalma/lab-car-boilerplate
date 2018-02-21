@@ -160,12 +160,11 @@ input.form-style::placeholder {
 
 .container-map {
   border: 1px solid #FFFFFF;
-  padding: 10px;
 }
 
-.container-map img {
+#map {
   width: 100%;
-  height: 50vh;
+  height: 25em;
 }
 
 /* Footer */
